@@ -9,6 +9,10 @@ admin:
   - cadastrar PONTO_FOCAL
   - cadastrar EDITOR
   - CADASTRAR OUTROS ORGAOS #permite cadastrar/alterar usuarios de outros orgaos
+  - editar_salvar SERVICO
+  - criar SERVICO
+  - despublicar SERVICO
+  - publicar SERVICO
 ponto_focal:
   - criar PAGINA-TEMATICA
   - editar_salvar PAGINA-TEMATICA
