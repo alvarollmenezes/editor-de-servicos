@@ -11,7 +11,7 @@ import static br.gov.servicos.editor.security.TipoPermissao.CADASTRAR_OUTROS_ORG
 
 @Component
 @Profile("!teste")
-public class LoginUserProfiles implements UserProfiles {
+public class  LoginUserProfiles implements UserProfiles {
 
     @Override
     public UserProfile get() {

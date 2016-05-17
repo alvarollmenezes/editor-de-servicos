@@ -34,4 +34,4 @@ INSERT INTO public.papeis (nome) VALUES ('ADMIN');
 INSERT INTO public.papeis (nome) VALUES ('PONTO_FOCAL');
 INSERT INTO public.papeis (nome) VALUES ('PUBLICADOR');
 INSERT INTO public.papeis (nome) VALUES ('EDITOR');
-INSERT INTO public.usuarios (cpf, senha, papel_id, servidor, habilitado, siorg, email_primario, nome) VALUES ('12312312312', '$2a$10$1O.BjADPpzYc2qm6c27U8ucMfZEhhHUALb/4TjiQMMbjoRgIqqizm', 1, true, true, 'http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/108999', 'jeank@thoughtworks.com', 'Editor de Serviços');
+INSERT INTO public.usuarios (cpf, senha, papel_id, servidor, habilitado, siorg, email_primario, nome) VALUES ('12312312312', '$2a$06$SMTu9S963NhHVBhkj4pPV.us2KsQqDuoO3D4tJ3E1ImRhQ2u1BufG', 1, true, true, 'http://estruturaorganizacional.dados.gov.br/id/unidade-organizacional/108999', 'jeank@thoughtworks.com', 'Editor de Serviços');
