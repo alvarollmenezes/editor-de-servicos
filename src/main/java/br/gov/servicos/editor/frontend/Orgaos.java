@@ -34,7 +34,10 @@ import static net.logstash.logback.marker.Markers.append;
 @FieldDefaults(level = PRIVATE, makeFinal = true)
 public class Orgaos implements InitializingBean {
 
-    public static final ClassPathResource RESOURCE = new ClassPathResource("estrutura-organizacional.json.gz");
+    /**
+     * prodest - alterado para capturar o organograma do estadocd
+     */
+    public static final ClassPathResource RESOURCE = new ClassPathResource("estrutura-organizacional-es.json.gz");
 
     RestTemplate rest;
     ObjectReader reader;
@@ -63,7 +66,7 @@ public class Orgaos implements InitializingBean {
         List<OrgaoDTO> busca = estruturaOrganizacional.getUnidades()
                 .stream()
                 .filter(new FiltroDeOrgaos(termo))
-                .map(u -> new OrgaoDTO().withNome(String.format("%s (%s)", u.getNome().trim(), u.getSigla().trim()))
+                .map(u -> new OrgaoDTO().withNome(String.format("%s", u.getNome().trim()))
                         .withId(u.getCodigoUnidade()))
                 .sorted(comparing(OrgaoDTO::getNome))
                 .collect(toList());
