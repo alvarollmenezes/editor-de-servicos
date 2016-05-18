@@ -40,12 +40,12 @@ eds:
   token:
     desabilitarUsuario: false
   cartas:
-    repositorio: "https://github.com/prodest/cartas-de-teste"
+    repositorio: "https://github.com/prodest/cartas-de-servico"
 
 fallback:
   eds:
     cartas:
-      repositorio: "https://github.com/prodest/cartas-de-teste"
+      repositorio: "https://github.com/prodest/cartas-de-servico"
 
 ---
 
